@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang='en-GB'>
+<head>
+  <meta charset='utf-8'>
+  <title>Beginning Ractive: Getting Acquainted with Events</title>
+  <link rel='stylesheet' href='css/simpleevents2.css'>
+</head>
+<body>
+  <h1>Creating Simple Events in Ractive</h1>
+
+  <div id='container'></div>
+
+  <script id="template" type="text/ractive">
+    <form on-submit="submit">
+      <input value="{{val}}">
+    </form>
+    <p>Text submitted: {{submitted}}</p>
+
+    <p>Character code of key pressed:</p>
+    <p><input value="{{keycode}}" on-keydown="@this.set('keycode', @event.keyCode), @event.preventDefault()"></p>                    
+  </script>
+  <script src='js/ractive.min.js'></script>
+  <script src="js/simpleevents2.js"></script>
+</body>
+</html>

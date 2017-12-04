@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang='en-GB'>
+<head>
+  <meta charset='utf-8'>
+  <title>Beginning Ractive: Getting Acquainted with Transitions</title>
+  <link rel='stylesheet' href='css/basicchaining.css'>
+</head>
+<body>
+  <h1>Creating Chained Transitions using Promises in Ractive</h1>
+
+  <div id='container'></div>
+
+  <script id="template" type="text/ractive">
+    {{#if visible === 1 }}
+      <button on-click="['show', 2]" fly-in-out="{ duration: 5000 }">Click me!</button>
+    {{elseif visible === 2 }}
+      <button on-click="['show', 1]" slide-in="{ duration: 5000 }" fade-out>And me!</button>
+    {{/if}}       
+  </script>
+  <script src='js/ractive.min.js'></script>
+  <script src="js/ractive-transitions-fade.js"></script>
+  <script src="js/ractive-transitions-slide.js"></script>  
+  <script src="js/ractive-transitions-fly.js"></script>
+  <script src="js/basicchaining.js"></script>
+</body>
+</html>

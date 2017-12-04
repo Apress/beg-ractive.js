@@ -1,0 +1,120 @@
+var hardcodedProducts = [
+	{
+		id: 1,
+		name: 'Product #1',
+		image: './img/book1',
+		category: 5,
+		price: '13.20',
+		in_cart: true,
+		hidden: false,
+    quantity: 1
+	},
+	{
+		id: 4,
+		name: 'Product #4',
+		image: './img/book2',
+		category: 5,
+		price: '6.66',
+		in_cart: false,
+		hidden: false,
+    quantity: 1
+	},
+	{
+		id: 6,
+		name: 'Product #6',
+		image: './img/book3',
+		category: 4,
+		price: '5.50',
+		in_cart: false,
+		hidden: false,
+    quantity: 1
+	},
+	{
+		id: 8,
+		name: 'Product #8',
+		image: './img/book4',
+		category: 3,
+		price: '99.99',
+		in_cart: false,
+		hidden: false,
+    quantity: 1
+	},
+	{
+		id: 10,
+		name: 'Product #10',
+		image: './img/book5',
+		category: 3,
+		price: '1.75',
+		in_cart: false,
+		hidden: false,
+    quantity: 1
+	},
+	{
+		id: 7,
+		name: 'Product #7',
+		image: './img/book6',
+		category: 2,
+		price: '4.50',
+		in_cart: false,
+		hidden: false,
+    quantity: 1
+	},
+	{
+		id: 9,
+		name: 'Product #9',
+		image: './img/book7',
+		category: 3,
+		price: '10.10',
+		in_cart: false,
+		hidden: false,
+    quantity: 1
+	},
+	{
+		id: 2,
+		name: 'Product #2',
+		image: './img/book8',
+		category: 3,
+		price: '3.60',
+		in_cart: false,
+		hidden: false,
+    quantity: 1
+	}
+];
+
+var hardcodedCartProducts = [
+	{
+		id: 1,
+		name: 'Product #1',
+		image: './img/book1',
+		price: '13.20',
+     quantity: 1
+	}
+];
+
+var hardcodedCategories = [
+	{
+		id: 1,
+		name: "All",
+		active: true
+	},
+	{
+		id: 2,
+		name: "e-Commerce",
+		active: false
+	},
+	{
+		id: 3,
+		name: "Beginning",
+		active: false
+	},
+	{
+		id: 4,
+		name: "Pro",
+		active: false
+	},	
+	{
+		id: 5,
+		name: "Node.js",
+		active: false
+	}
+];

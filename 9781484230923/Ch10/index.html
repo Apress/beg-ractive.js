@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Beginning Ractive: Creating a Shopping Cart</title>
+  <link rel="stylesheet" type="text/css" href="css/shop.css">
+</head>
+<body>
+  <main class="main">
+    <div class="wrapper cf">
+
+        <div class="box latest-products">
+          <h1>Our book catalogue</h1>
+          <ul class="products-list cf"></ul>
+        </div>
+
+        <div class="box cart">
+          <h1>My Cart</h1>
+          <ul class="cart-list"></ul>
+        </div>
+
+        <div class="box filters">
+          <h1>Categories</h1>
+          <ul class="categories-list"></ul>
+        </div>
+
+      </div>
+  </main> 
+  
+  <script type="text/ractive" id="product_item">
+    {{#each products}}
+      <li class="{{ hidden ? 'hidden' : '' }} {{ in_cart ? 'in-cart' : '' }}">
+        <a class="item" href="#/product/{{id}}">
+          <h3 class="item-name">{{name}}</h3>
+          <img class="item-image" src="{{image}}.jpg" />
+          <span class="item-price">$ {{price}}</span>
+          
+          {{#if in_cart}}
+            <span class="item-buy fa fa-shopping-cart discard" on-click='@this.fire("discard", @context, i)' title="Remove from cart"></span>
+          {{else}}
+            <span class="item-buy fa fa-shopping-cart" on-click="add" title="Add to cart"></span>
+          {{/if}}
+        </a>
+      </li>
+    {{/each}}
+  </script>
+
+<script type="text/ractive" id="cart_item">
+    {{#if products}}
+
+      {{#each products:i}}
+        <li class="item cf">
+          <div class="item-counter">
+            <span class="fa fa-plus" on-click='@this.fire("plus", @context, i)'></span>
+            <span class="item-counter-quantity">{{quantity}}</span>
+            <span class="fa fa-minus" on-click='@this.fire("minus", @context, i)'></span>
+          </div>
+          <img class="item-image" src="{{image}}-small.jpg" alt="{{name}}" />
+          <span class="item-name">{{name}}</span>
+          <span class="item-price">$ {{price}}</span>
+          <span class="item-discard discard-from-cart fa fa-lg fa-trash" on-click='@this.fire("remove", @context, i)'></span>  
+        </li>
+      {{/each}}
+
+      <li class="subtotal cf">
+        <span class="subtotal-caption">Subtotal</span>
+        <span class="subtotal-number">$ {{subtotal}}</span>
+      </li>
+
+      <div id="output" class="output">
+        <div id="content">
+          <div class="buy"><button id="buyButton">{{payment}}</button></div>
+          <div id="result"></div>
+        </div>
+        <div id="status"></div>
+        <pre id="log"></pre>
+      </div>
+      
+    {{else}}
+      <li class="empty">Your shopping cart is empty.</li>
+    {{/if}}
+  </script>
+
+
+
+  <script type="text/ractive" id="categories_item">
+    {{#each categories}}
+      <li class="categories-listitem {{ active ? 'active' : '' }}" on-click="toggle">{{name}}</li>
+    {{/each}}
+  </script>
+
+  <script src='js/ractive.min.js'></script>
+  <script src='js/jquery.min.js'></script>
+  <script src='js/shop.js'></script>
+  <script src='js/payment.js'></script>
+</body>
+</html>
+
+
+
+
+  
+  

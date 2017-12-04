@@ -1,0 +1,356 @@
+@font-face {
+  font-family: 'robotoregular';
+  src: url('../fonts/Roboto-Regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: robotoregular, sans-serif;
+}
+
+section {
+  width: 100%;
+  min-height: 6.25rem;
+}
+
+h1, h2 {
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.42857rem;
+  font-weight: normal;
+}
+
+li {
+  display: inline-block;
+  padding: 0 0.9375rem 0 0.9375rem;
+}
+
+a { 
+  text-decoration: none; 
+  color: #6e6e6e;
+}
+
+#container {
+  border: 0.0625rem solid #000;
+  width: 59rem;
+  margin: 1.875rem auto 1.875rem auto;
+}
+
+/* ------------------ */
+/* Header image       */
+/* ------------------ */
+#top {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+}
+
+#top img {
+  height: 2rem;
+  margin: 2.3rem 0 1.7rem 1.65rem;
+}
+
+/* ------------------ */
+/* Menu section       */
+/* ------------------ */
+#menu li {
+  text-transform: uppercase;
+}
+
+#menu li a:hover {
+  border-bottom: 0.25rem solid #ffcc00;
+  padding-bottom: 0.75rem;
+}
+
+/* -------------------- */
+/* Header Image section */
+/* -------------------- */
+#head-img {
+  background-image: url(../img/header.jpg);
+  height: 21rem;
+  width: 100%;
+}
+
+#head-img div {
+  line-height: 1.875rem;
+  width: 43.4375rem;
+  padding: 1.5625rem 0 0 4.6875rem;
+}
+
+#head-img div a {
+  padding: 0.4375rem 0.625rem 0.625rem 0.4375rem;
+  background-color: #ffcc00;
+  border-radius: 2.375rem;
+  display: block;
+  width: 6.25rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* ------------------ */
+/* Highlights section */
+/* ------------------ */
+#highlights { 
+  background-color: #f7f7f7; 
+  padding-top: 1.5625rem; 
+}
+
+#highlights h3 {
+  color: #1a1a1a;
+  font-size: 1.51429rem; 
+  margin-left: 1.875rem;
+  line-height: 1.25rem;
+}
+
+#highlights ul {
+  padding-bottom: 3.125rem;
+}
+
+#highlights .book img {
+  width: 8.125rem;
+  height: auto;
+}
+
+#highlights .format {
+  color: #999;
+  width: 6.25rem;
+  font-size: 0.875rem;
+}
+
+/* ------------------ */
+/* Daily section      */
+/* ------------------ */
+#daily {
+  width: 17.5rem;
+  height: 13.125rem;
+  float: right;
+  padding: 1.875rem 0.9375rem 0.9375rem 0.9375rem;
+  background-color: #e6e6e6;
+  margin: -1.25rem 4.375rem 0 2rem;
+  position: absolute;
+}
+
+#daily h3 {
+  color: #1a1a1a;
+  font-size: 1.51429rem; 
+  margin-left: 1.875rem;
+  line-height: 1.25rem;  
+  position: absolute;
+  padding-left: 7.5rem;
+  margin-top: 0.125rem;
+}
+
+#daily .info {
+  position: absolute;
+  padding-left: 9.375rem;
+  margin-top: 2.5rem;
+  width: 5.3125rem;
+}
+
+#daily .discount {
+  font-weight: bold;
+  font-size: 1.71429rem;
+  position: absolute;
+  padding-left: 9.375rem;
+  margin-top: 6.875rem;  
+}
+
+#daily .oldprice {
+  text-decoration: line-through;
+  color: #999;
+  float: left;
+  position: absolute;
+  padding-left: 9.375rem;
+  margin-top: 9.0625rem;
+}
+
+/* ------------------ */
+/* Categories section */
+/* ------------------ */
+#categories { 
+  background-color: #ffffff; 
+  padding-bottom: 0.5rem;
+}
+
+#categories h3 {
+  color: #1a1a1a;
+  font-size: 1.51429rem; 
+  margin-left: 1.875rem;
+  line-height: 1.25rem;
+}
+
+#categories li {
+  border: 0.0625rem solid #4d4d4d;
+  border-radius: 0.9375rem;
+  padding: 0.3125rem 0.9375rem 0.3125rem 0.9375rem;
+  margin: 0.3125rem;
+}
+
+/* ------------------ */
+/* Search             */
+/* ------------------ */
+.search {
+  color: #fff;
+  float: right;
+  line-height: 3.125rem;
+  padding-right: 0.9375rem;
+  margin-top: 0;
+}
+
+.search input {
+  background-color: #e6e6e6;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  border-radius: 1.21429rem;
+  height: 2.5rem;
+  padding: 0.71429rem 0.78571rem 0.78571rem;
+  border: 0.07143rem solid #d9d9d9;
+  box-sizing: border-box;
+  margin-right: 1.25rem;
+}
+
+.search input:active, input:focus {
+  background-color: #ffffff;
+  outline: none;
+}
+
+/* ------------------ */
+/* Publish section   */
+/* ------------------ */
+/*#publish { 
+  background-color: #f7f7f7; 
+  background: url(../img/publish.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 14.0625rem;
+}
+
+#publish .title {
+  color: #fff;
+  font-size: 1.51429rem; 
+  margin-left: 1.875rem;
+  line-height: 1.25rem;
+  width: 25rem; 
+  position: absolute;
+  margin-top: 2.8125rem;
+  margin-left: 1.875rem;
+}
+
+#publish .info {
+  color: #fff;
+  width: 39.375rem;
+  position: absolute;
+  margin-top: 4.6875rem;
+  margin-left: 1.875rem;
+}
+
+#publish .proposal a {
+  padding: 0.625rem;
+  padding-top: 0.4375rem;
+  background-color: #ffcc00;
+  border-radius: 2.375rem;
+  display: block;
+  width: 9.6875rem;
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 0.4375rem;
+  margin-left: 1.875rem;
+  position: absolute;
+  margin-top: 9.6875rem;
+}*/
+
+
+/* ------------------ */
+/* Subscribe section  */
+/* ------------------ */
+/*#subscribe {   
+  background-color: #ffffff; 
+}
+
+#subscribe .title {
+  color: #1a1a1a;
+  font-size: 1.51429rem; 
+  margin-left: 1.875rem;
+  line-height: 1.25rem;
+  float: left;
+  position: absolute;
+  padding-left: 31.25rem;
+  margin-top; 3.125rem; 
+  width: 40rem; 
+}
+
+#subscribe .intro {
+  margin-left: 1.875rem;
+  line-height: 1.25rem;
+  float: left;
+  position: absolute;
+  padding-left: 31.25rem;
+  margin-top: 7.8125rem;  
+  width: 15.625rem;  
+}
+
+#subscribe label {
+  margin-left: 1.875rem;
+  float: left;
+  position: absolute;
+  padding-left: 31.25rem;
+  width: 15.625rem;
+  margin-top: 3.125rem;
+}
+
+#subscribe label input {
+  margin-top: 0.3125rem;
+}
+
+#subscribe .signup {
+  margin-left: 1.875rem;
+  line-height: 1.25rem;
+  float: left;
+  position: absolute;
+}
+
+#subscribe .signup a {
+  padding: 0.625rem;
+  padding-top: 0.4375rem;
+  background-color: #ffcc00;
+  border-radius: 2.375rem;
+  display: block;
+  width: 6.25rem;
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 0.4375rem;
+  margin-left: -0.9375rem;
+}
+
+#subscribe .advert {
+  background-image: url(../img/advert.jpg);
+  width: 29.375rem;
+  height: 16.125rem;
+  margin: 0.9375rem;
+  background-size: cover;
+  background-position: center;
+  background-color: #333333;
+}
+
+
+/* ------------------ */
+/* Footer section     */
+/* ------------------ */
+/*
+footer {
+  background-color: #000;
+  line-height: 4.375rem;
+  padding-left: 1.25rem;
+  color: #6e6e6e;
+}
+
+footer span img {
+  vertical-align: middle;
+  padding-right: 2.1875rem;
+}*/

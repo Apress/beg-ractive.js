@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang='en-GB'>
+<head>
+  <meta charset='utf-8'>
+  <title>Beginning Ractive: Extacting Colors using Color Thief</title>
+  <link rel='stylesheet' href='css/adaptor.css'>
+</head>
+<body>
+  <div id="container"></div>
+
+  <script id="template" type="text/ractive">
+    
+    <h3>Color Thief</h3>
+    <p>Dominant color:</p>
+    <p class="dominant" style="background-color: rgb({{dominant}})">RGB({{dominant}})</p>
+    <img id="ctimage" src="img/demo-small.jpg">
+  </script>
+
+  <script src='js/ractive.min.js'></script>
+  <script src='js/color-thief.min.js'></script>
+  <script src='js/adaptor.js'></script>
+</body>
+</html>

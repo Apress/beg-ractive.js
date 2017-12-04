@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'robotoregular';
+  src: url('../font/Roboto-Regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: robotoregular, sans-serif;
+  position: relative;
+  height: 100%;
+  padding: 3rem 30%;
+  margin: 0;
+  font-size: 1rem;
+  color: #353535;
+}
+
+.ractive-tooltip {
+  position: fixed;
+  display: block;
+  width: 12.5rem;
+  padding: 0.3rem;
+  background: #a9a9a9;
+  border: 0.25rem solid #838383;
+  box-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.1875rem;
+  color: #ffffff;
+}
+
+.ractive-tooltip:after, .ractive-tooltip:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.ractive-tooltip:after {
+  border-color: rgba(169, 169, 169, 0);
+  border-top-color: #a9a9a9;
+  border-width: 1.25rem;
+  margin-left: -1.25rem;
+}
+.ractive-tooltip:before {
+  border-color: rgba(131, 131, 131, 0);
+  border-top-color: #838383;
+  border-width: 1.625rem;
+  margin-left: -1.625rem;
+}

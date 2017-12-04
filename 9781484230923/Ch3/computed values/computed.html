@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang='en-GB'>
+<head>
+  <meta charset='utf-8'>
+  <title>Beginning Ractive: Calculating Values</title>
+  <link rel='stylesheet' href='css/computed.css'>
+</head>
+<body>
+  <div id="container"></div>
+
+  <script id="template" type="text/ractive">
+    
+    <h3>Fish Tank Volume Calculator</h3>
+    <img src="img/tank.jpg">
+    <label>
+      <p>Enter the width (in cms):</p> <input value="{{width}}">
+    </label>
+    <label>
+      <p>Enter the length (in cms):</p> <input value="{{length}}">
+    </label>
+    <label>
+      <p>Enter the height (in cms):</p> <input value="{{height}}">
+    </label>
+    <span>This equates to a {{volume}} liter tank.</span>
+  </script>
+
+  <script src='js/ractive.min.js'></script>
+  <script src="js/computed.js"></script>
+</body>
+</html>

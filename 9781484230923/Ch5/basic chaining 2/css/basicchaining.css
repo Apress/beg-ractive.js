@@ -1,0 +1,30 @@
+@font-face {
+	font-family: 'robotoregular';
+	src: url('../font/Roboto-Regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#target {
+  text-align: center;
+}
+
+body {
+  font-family: robotoregular, sans-serif;
+  font-size: 0.875rem;
+  padding: 2rem;
+}
+
+button {
+  font-size: 2em;
+  padding: 1em;
+  background-color: #696969;
+  color: #fff;
+  border-radius: 0.4em;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #777;
+}

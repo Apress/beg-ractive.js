@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang='en-GB'>
+<head>
+  <meta charset='utf-8'>
+  <title>Beginning Ractive: Working with Expressions</title>
+  <link rel='stylesheet' href='css/partials.css'>
+</head>
+<body>
+  <h1>Gallery of Flowers</h1>
+  <div id='container'></div>
+  <script id='template' type='text/ractive'>
+    <div class='gallery'>
+      {{#each items}}
+        {{>thumbnail}}
+      {{/each}}
+    </div>
+  </script>
+  <script src='js/ractive.min.js'></script>
+  <script src='js/partials.js'></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+@font-face {
+	font-family: 'robotoregular';
+	src: url('../font/Roboto-Regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  font-family: robotoregular, sans-serif;
+  font-size: 0.875rem;
+  padding: 2rem;
+}
+
+.slideshow {
+	position: relative;
+	width: 300px;
+	height: 235px;
+	box-sizing: border-box;
+	padding: 0 0 3em 0;
+	height: 90vh;
+  padding: 5px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(31, 41, 51, 0.5);
+  width: 465px;
+  height: 350px;
+}
+
+.slideshow:after {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+  box-shadow: 0 0 30px rgba(31, 41, 51, 0.25) inset;
+  z-index: 10;
+}
+
+.slideshow .next, .slideshow .prev {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	box-sizing: border-box;
+	user-select: none;
+	width: 2em;
+	text-align: center;
+	cursor: pointer;
+	color: #fff;
+	  font-size: 52px;
+	height:70px;
+	width: 30px;
+	top: 110px;
+	
+}
+
+.slideshow .next {
+	right: 10px;
+}
+
+.slideshow .prev {
+  left: 10px;
+}
+
+.slideshow .main {
+	position: relative;
+  box-sizing: border-box;
+  width: 455px;
+  height: 305px;
+}
+
+.slideshow .main-image {
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	transition: all 600ms cubic-bezier(0.47, 0, 0.745, 0.715); }
+}
+
+
+

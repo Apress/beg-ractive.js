@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Beginning Ractive: Working with Bootstrap</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <style>
+    #container {
+      margin-left: 10rem;
+      margin-top: 5rem;
+    }
+  </style>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src='js/ractive.min.js'></script>
+  <script src='js/ractive-bootstrap.js'></script>
+</head>
+<body>
+  <div id="container"></div>
+
+  <script>
+    var ractive = new Ractive({
+      el: '#container',
+      template: `
+        <btn href="#buttons">Button as a link</btn>
+        <btn onclick="alert('bar')">Button with onclick event</btn>
+        <btn active="true">Active</btn>
+        <btn disabled="true">Disabled</btn>
+
+        <p></p>
+
+        <btn type="default">{{default}}</btn>
+        <btn type="primary">{{primary}}</btn>
+        <btn type="success">{{success}}</btn>
+        <btn type="info">Info</btn>
+        <btn type="warning">Warning</btn>
+        <btn type="danger">Danger</btn>
+      `,
+      data : {
+        default: "Default",
+        primary: "Primary",
+        success: "Success"
+      }
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

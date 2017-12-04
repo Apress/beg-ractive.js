@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang='en-GB'>
+<head>
+  <meta charset='utf-8'>
+  <title>Beginning Ractive: Handling Form Elements</title>
+  <link rel='stylesheet' href='css/dropdown.css'>
+</head>
+<body>
+  <div id="container"></div>
+
+  <script id="template" type="text/ractive">
+    <h3>Acme Black Wooden Picture Photo Frame</h3>
+    <img src="img/frame.jpg">
+    <ul>
+      <li>These frames are made to order and dispatched from our workshop.</li>
+      <li>The picture moulding is made from pine and measures 15mm wide and 25mm deep</li>
+      <li>Our frames come ready to hang or stand portrait or landscape, frame sizes 16x12 inches and above to hang only</li>
+    </ul>
+  
+    <p class="sizes">Sizes available:</p>
+    <select value='{{avsize}}'>
+      {{#each avsizes}}
+        <option value="{{this.value}}">{{this.name}}</option>
+      {{/each avsizes}}
+    </select>
+    
+    <p class="price">Price: ${{avsize}}</p>
+  </script>
+  <script src='js/ractive.min.js'></script>
+  <script src="js/dropdown.js"></script>
+</body>
+</html>

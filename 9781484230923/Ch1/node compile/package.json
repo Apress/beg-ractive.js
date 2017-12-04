@@ -1,0 +1,15 @@
+{
+  "name": "testing-ractive",
+  "version": "1.0.0",
+  "description": "Package to test using Ractive with Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Libby",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "path": "^0.12.7"
+  }
+}

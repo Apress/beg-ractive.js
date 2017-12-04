@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang='en-GB'>
+<head>
+  <meta charset='utf-8'>
+  <title>Beginning Ractive: Working with Expressions</title>
+  <link rel='stylesheet' href='css/expressions.css'>
+</head>
+<body>
+  <div id='container'></div>
+  <script id='template' type='text/ractive'>
+    <h1>Copenhagen</h1>
+    <p>{{city}}, or København (in Danish), is the capital and most populous city of Denmark. The City of {{city}} (Byen København) has a population of {{ format(population) }} (as of December 2016), of whom {{ format(inCopenhagen) }} live in the Municipality of Copenhagen.</p>
+    <div class="image"><img src="img/nyhavn.jpg"></div>
+    <span>Source: Wikipedia / Wikimedia</span>
+  </script>
+  <script src='js/ractive.min.js'></script>
+  <script src="js/expressions.js"></script>
+</body>
+</html>

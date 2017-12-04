@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang='en-GB'>
+<head>
+  <meta charset='utf-8'>
+  <title>Beginning Ractive: Getting Acquainted with Animation</title>
+  <link rel='stylesheet' href='css/temperatures.css'>
+</head>
+<body>
+  <h1>Average High Temperatures</h1>
+
+  <div id='container'></div>
+  
+  <script id="template" type="text/ractive">
+  Location: {{cities.name}}
+
+
+		<div class='temperatures'>
+			
+		  <!-- the chart -->
+		  <div class='bar-chart'>
+	      <!-- 12 sections, one for each month -->
+	      {{#each cities.months: i}}
+	        <div class='bar-group'>
+
+	        	<!-- average high temperature -->
+	          <div class='bar-outer high {{ (high >= 0) ? "positive" : "negative" }}' style='height: {{ scale(high) }}px;'>
+	            <div class='bar-inner'></div>
+	            <span class="temp">{{ cities.months[i].high|0 }}°F</span>
+	          </div>
+
+	          <!-- month label -->
+	          <span class='month-label'>{{ monthNames[i] }}</span>
+	        </div>
+	      {{/each}}
+
+		  </div>
+		</div>     
+  </script>
+  <script src='js/ractive.min.js'></script>
+  <script	src='js/temperatures.js'></script>
+</body>
+</html>
+

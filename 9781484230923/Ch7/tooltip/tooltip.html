@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Beginning Ractive: Creating Decorators</title>
+  <link rel='stylesheet' href='css/tooltip.css'>
+</head>
+<body>
+  <h1>Creating a Tooltip Decorator</h1>
+  
+  <div id='container'></div>
+
+  <script id='tpl' type='text/ractive'>
+    <p>This text contains <span as-tooltip="'A tooltip is a piece of helper text that appears when you mouseover a particular element'">tooltips</span>.</p>
+  </script>
+
+  <script src='js/ractive.min.js'></script>
+  <script src='js/tooltip.js'></script>
+</body>
+</html>

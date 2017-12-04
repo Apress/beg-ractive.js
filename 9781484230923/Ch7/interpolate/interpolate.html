@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang='en-GB'>
+<head>
+  <meta charset='utf-8'>
+  <title>Beginning Ractive: Creating Interpolators</title>
+  <link rel='stylesheet' href='css/interpolate.css'>
+</head>
+<body>
+  <h1>Creating a Interpolator Component</h1>
+  
+  <div id='container'></div>
+
+  <script id='template' type='text/ractive'>
+      <span style='background: {{bg}}; color: {{fg}}'>
+          Transitioning colors using Chroma.js and Ractive
+      </span>
+  </script>
+  <script src='js/ractive.min.js'></script>
+  <script src='js/chroma.min.js'></script>
+  <script src='js/interpolate.js'></script>
+
+</body>
+</html>

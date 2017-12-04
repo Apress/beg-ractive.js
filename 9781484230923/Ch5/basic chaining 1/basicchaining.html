@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Beginning Ractive: Getting Acquainted with Transitions</title>
+  <link rel="stylesheet" type="text/css" href="css/basicchaining.css">
+</head>
+<body>
+  <h1>Creating Simple Chained Transitions in Ractive</h1>
+  <div id="container"></div>
+
+  <script id="template" type="text/ractive">
+    {{#if shown}}
+      <div on-click="console.log('You\'ve clicked this button!')" fly-in-out>
+        this will fly in and out of view
+      </div>
+    {{/if}}
+  </script> 
+
+  <script src="js/ractive.min.js"></script>
+  <script src="js/ractive-transitions-fly.js"></script>
+  <script src="js/basicchaining.js"></script>  
+</body>
+</html>

@@ -1,0 +1,43 @@
+@font-face {
+	font-family: 'robotoregular';
+	src: url('../font/Roboto-Regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  font-family: robotoregular, sans-serif;
+  font-size: 0.875rem;
+  padding: 2rem;
+}
+
+img {
+  position: absolute;
+  margin-left: 20.25rem;
+  margin-top: -4.4rem;
+}
+
+label p {
+  width: 234px;
+  display: inline-block;
+  margin: 5px;
+}
+
+input {
+  width: 30px;
+}
+
+span {
+  display: block;
+  clear: both;
+  width: 250px;
+  margin-top: 15px;
+}
+
+#container {
+  border: 1px solid #000;
+  width: 33rem;
+  border-radius: 0.4rem;
+  padding: 1rem;
+}
+

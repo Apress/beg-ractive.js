@@ -1,0 +1,155 @@
+// color variables ------------------------- //
+$icon-color: #fff;
+$line-color: #fff;
+$light-gray: #ccc;
+$black: #000;
+$white: #fff;
+$very-light-gray: lighten($light-gray, 10%);
+
+// ----------------------------------------- //
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url('../font/Roboto-Regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: robotoregular, sans-serif;
+  padding: 2rem;
+  font-weight: 200;
+}
+
+span {
+  padding: 1rem;
+  border: 0.0625rem solid $black;
+  border-radius: 0.1875rem;
+}
+
+h2 {
+  color: #fff;
+  background-color: $black;
+  padding: 0.625rem;
+  width: 80%;
+}
+
+.extra {
+  border: 1px solid $light-gray;
+  padding-left: 0.9375rem;
+  display: none;
+  padding: 0.625rem;
+}
+
+.walk-icon, .tube-icon {
+  background-image: url(../img/travel.png);
+  width: 0.3125rem;
+  border: none;
+  vertical-align: text-top;
+  background-color: $white;
+  margin-right: 0.3125rem;
+  display: inline-block;
+  height: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.walk-icon {
+  background-position: 0 0;
+}
+
+.tube-icon {
+  background-position: 0 -3.4375rem;
+}
+
+.banner {
+  background-color: $light-gray;
+  display: inline-block;
+  padding: 0.3125rem;
+  font-size: 1.25rem;
+  width: 100%;
+}
+
+.line {
+  width: 9.375rem !important;
+  display: inline-block;
+  margin-top: 0.3125rem;
+  margin-bottom: 0.3125rem;
+  margin-right: 0.1875rem;
+  margin-top: 0.125rem !important;
+  background-color: $black;
+  color: $line-color;
+  font-weight: bold;
+  padding: 0.1875rem;
+  text-align: center;
+}
+
+.linedetail {
+  margin-top: 0.3125rem;
+  margin-bottom: 0.3125rem;
+  width: 34.375rem;
+  display: inline-block;
+}
+
+.info, .time {
+  font-weight: bold;
+  border: none;
+  padding: 0;
+}
+
+.descr {
+  background-color: $very-light-gray;
+  display: block;
+  padding: 0.625rem;
+  width: 98%;
+}
+
+.hide {
+  cursor: pointer;
+  background-image: url("../img/plus.png");
+  background-repeat: no-repeat;
+  padding-left: 1.6875rem;
+}
+
+#summary {
+  width: 49%;
+  float: right;
+}
+
+#summary p {
+    width: 41.875rem;
+    margin-top: 0.3125rem;
+    margin-bottom: 0.3125rem;
+    vertical-align: top;
+    display: inline;
+    line-height: 2.1875rem;
+
+    &.l2end {
+      width: 31.25rem;
+      display: inline;
+    }
+
+    &.time {
+      width: 3.75rem;
+    }
+}
+
+#container {
+  width: 80%;
+}
+
+#request {
+  border-right: 0.0625rem solid $light-gray;
+  width: 50%;
+}
+
+#legs {
+  display: block;
+  margin-bottom: 0.375rem;
+  border-bottom: 0.0625rem solid #ccc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-bottom: 0;
+  padding-left: 0;
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang='en-GB'>
+<head>
+  <meta charset='utf-8'>
+  <title>Beginning Ractive: Creating Components</title>
+  <link rel='stylesheet' href='css/slideshow.css'>
+</head>
+<body>
+  <h1>Creating a Slideshow Component</h1>
+  
+  <div id='container'></div>
+
+  <script id="slideshow" type="text/ractive">
+    <div class='slideshow'>
+      <div class='main'>
+        <a class='prev' on-click="goto(current - 1)"><span>&lsaquo;</span></a>
+        {{#if images[current]}}
+          <div class='main-image' style='background-image: url("{{images[current].src}}");'></div>
+        {{/if}}
+        
+        <a class='next' on-click="goto(current + 1)"><span>&rsaquo;</span></a>
+        <span class="caption">{{images[current].caption}}</span> 
+      </div>
+    </div>
+  </script>
+  <script src='js/ractive.min.js'></script>
+  <script src='js/slideshow.js'></script>
+</body>
+</html>

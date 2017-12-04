@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'robotoregular';
+	src: url('../font/Roboto-Regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  font-family: robotoregular, sans-serif;
+  padding: 2rem;
+  font-weight: 200;
+}
+
+#border {
+  border: 5px solid #fff;
+  box-shadow: 0 3px 6px rgba(0,0,0,.25);  
+  width: 640px;
+  height: 423px;
+}
+
+#sepia { 
+  filter: url('#sepia') brightness(250%);
+}
+
+svg {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}

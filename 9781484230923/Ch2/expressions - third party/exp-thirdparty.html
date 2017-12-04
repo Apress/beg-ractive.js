@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang='en-GB'>
+<head>
+  <meta charset='utf-8'>
+  <title>Beginning Ractive: Working with Expressions</title>
+  <link rel='stylesheet' href='css/exp-thirdparty.css'>
+</head>
+<body>
+  <div id='container'></div>
+  <script id='template' type='text/ractive'>
+    <h1>Time Zones in Ractive</h1>
+    <div id="uktime">
+      <div class="flag"><img src="img/United-Kingdom-icon.png"></div>
+      <div class="timeZ">UK time is now: {{uk}} </div>
+    </div> 
+    
+    <div id="nytime">
+      <div class="flag"><img src="img/United-States-icon.png"></div>
+      <div class="timeZ">The Apress office is in New York, which is GMT -5 - the time is now: {{ny}} </div>
+    </div> 
+  </script>
+  <script type="text/javascript" src="js/moment.js"></script>
+  <script type="text/javascript" src="js/moment-timezone.js"></script>
+  <script src='js/ractive.min.js'></script>
+  <script src="js/exp-thirdparty.js"></script>
+</body>
+</html>

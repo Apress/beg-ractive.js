@@ -1,0 +1,20 @@
+@font-face {
+	font-family: 'robotoregular';
+	src: url('../font/Roboto-Regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  font-family: robotoregular, sans-serif;
+  padding: 2rem;
+}
+
+#sprite {
+  background-color: #ccc;
+  color: #000;
+  font-size: 2rem;
+  padding: 1rem;
+  width 10rem;
+  position: relative;
+}
